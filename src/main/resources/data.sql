@@ -1,16 +1,18 @@
--- Tắt kiểm tra khóa ngoại để tránh lỗi khi xóa dữ liệu cũ (quan trọng!)
+-- Tắt kiểm tra khóa ngoại
 SET FOREIGN_KEY_CHECKS = 0;
 
--- Xóa dữ liệu cũ để tránh trùng lặp khi chạy lại
-TRUNCATE TABLE order_item;
-TRUNCATE TABLE order_details;
-TRUNCATE TABLE orders;
-TRUNCATE TABLE products;
-TRUNCATE TABLE categories;
-TRUNCATE TABLE users;
+-- Dùng DELETE thay cho TRUNCATE để chắc chắn xóa được
+DELETE FROM order_item;
+DELETE FROM order_details;
+DELETE FROM orders;
+DELETE FROM products;
+DELETE FROM categories;
+DELETE FROM users;
 
 -- Bật lại kiểm tra khóa ngoại
 SET FOREIGN_KEY_CHECKS = 1;
+
+-- --- NẠP DỮ LIỆU MỚI --
 
 -- --- NẠP DỮ LIỆU MỚI ---
 
