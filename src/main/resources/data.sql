@@ -1,4 +1,18 @@
 -- Dữ liệu bảng Categories (Danh mục)
+-- Tắt kiểm tra khóa ngoại để xóa cho mượt
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- Xóa sạch dữ liệu cũ
+TRUNCATE TABLE order_item;
+TRUNCATE TABLE order_details;
+TRUNCATE TABLE orders;
+TRUNCATE TABLE products;
+TRUNCATE TABLE categories;
+TRUNCATE TABLE users;
+
+-- Bật lại kiểm tra khóa ngoại
+SET FOREIGN_KEY_CHECKS = 1;
+
 INSERT INTO categories (id, name) VALUES (1, 'Áo Thun');
 INSERT INTO categories (id, name) VALUES (2, 'Quần Jean');
 INSERT INTO categories (id, name) VALUES (3, 'Phụ Kiện');
