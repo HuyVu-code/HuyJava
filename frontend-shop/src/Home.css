@@ -1,0 +1,55 @@
+/* TỔNG THỂ DARK THEME */
+.bg-dark-theme {
+    background-color: #0b0b0b; /* Đen sâu thẳm */
+    color: white;
+}
+
+.bg-black-card {
+    background-color: #151515 !important;
+}
+
+.dark-input {
+    background-color: #222 !important;
+    border: 1px solid #333 !important;
+    color: white !important;
+    border-radius: 0 !important;
+}
+
+.dark-input::placeholder {
+    color: #666;
+}
+
+/* FOOTER THEO ẢNH MẪU */
+.footer-dark {
+    background-color: #111111 !important; /* Đen carbon sang trọng */
+    color: #ffffff !important;
+    border-top: 1px solid #222;
+}
+
+.footer-divider {
+    border-top: 1px solid #222;
+}
+
+.footer-dark a {
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.footer-dark a:hover {
+    opacity: 1;
+    color: #ffc107 !important;
+}
+
+/* CAROUSEL */
+.carousel-item img {
+    height: 65vh;
+    object-fit: cover;
+    filter: brightness(0.6); /* Làm tối ảnh Slide để nổi chữ */
+}
+
+.btn-shop-now {
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 0;
+    transition: 0.4s;
+}

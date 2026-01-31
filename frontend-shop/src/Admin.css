@@ -1,0 +1,51 @@
+/* src/Admin.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Admin (Giống trang chủ) */
+.navbar-admin {
+    background-color: #000 !important; /* Đen tuyền */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Các thẻ Card thống kê */
+.card-stat {
+    border: none;
+    border-radius: 0;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Bảng dữ liệu */
+.table-custom thead {
+    background-color: #000;
+    color: #fff;
+}
+
+.table-custom th {
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+}
+
+.table-custom td {
+    vertical-align: middle;
+    padding: 15px;
+}
+
+/* Nút bấm vuông vắn */
+.btn-square {
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
