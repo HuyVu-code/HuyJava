@@ -1,0 +1,91 @@
+/* src/Login.css */
+.login-page {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.login-container {
+    height: 100%;
+}
+
+/* Ảnh bên trái */
+.bg-fashion {
+    background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+/* Phần form bên phải */
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+}
+
+/* Tên thương hiệu */
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+}
+
+.sub-title {
+    text-align: center;
+    color: #888;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.custom-input {
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 0 !important;
+    padding: 15px 5px !important;
+    background: transparent !important;
+    outline: none !important;
+}
+
+.custom-input:focus {
+    box-shadow: none !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+/* Nút màu đen quyền lực */
+.btn-fashion {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn-fashion:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-fashion:disabled {
+    background-color: #666;
+}
